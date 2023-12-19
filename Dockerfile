@@ -1,4 +1,4 @@
-FROM openjdk:16-slim
+FROM openjdk:8-slim
 
 ARG HADOOP_VERSION=3.3.5
 ARG HIVE_METASTORE_VERSION=3.1.3

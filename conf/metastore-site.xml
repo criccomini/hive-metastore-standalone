@@ -25,7 +25,7 @@ likely need to add a number of new values. -->
   <!-- Add Materialization stuff for standalone metastore -->
   <property>
     <name>metastore.task.threads.always</name>
-    <value>org.apache.hadoop.hive.metastore.events.EventCleanerTask,org.apache.hadoop.hive.metastore.MaterializationsCacheCleanerTask</value>
+    <value>org.apache.hadoop.hive.metastore.events.EventCleanerTask</value>
   </property>
   <property>
     <name>metastore.expression.proxy</name>
