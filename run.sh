@@ -6,4 +6,4 @@ set -euxo pipefail
 /opt/hive-metastore/bin/schematool --verbose -dbType derby -initSchema
 
 # start metastore (in foreground)
-/opt/hive-metastore/bin/start-metastore
+/opt/hive-metastore/bin/hive metastore
