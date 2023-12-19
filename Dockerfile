@@ -26,7 +26,7 @@ RUN \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-COPY conf/metastore-site.xml /opt/hive-metastore/conf/metastore-site.xml
+COPY conf/hive-site.xml /opt/hive-metastore/conf/hive-site.xml
 COPY run.sh run.sh
 
 CMD [ "./run.sh" ]
