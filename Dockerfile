@@ -18,9 +18,9 @@ RUN \
     ln -s /opt/hadoop-$HADOOP_VERSION /opt/hadoop && \
     rm -r /opt/hadoop/share/doc && \
   echo "Download and install the standalone metastore binary" && \
-    curl https://downloads.apache.org/hive/hive-standalone-metastore-$HIVE_METASTORE_VERSION/hive-standalone-metastore-$HIVE_METASTORE_VERSION-bin.tar.gz \
+    curl https://downloads.apache.org/hive/hive-$HIVE_METASTORE_VERSION/apache-hive-$HIVE_METASTORE_VERSION-bin.tar.gz \
     | tar xvz -C /opt/ && \
-    ln -s /opt/apache-hive-metastore-$HIVE_METASTORE_VERSION-bin /opt/hive-metastore && \
+    ln -s /opt/apache-hive-$HIVE_METASTORE_VERSION-bin /opt/hive-metastore && \
   echo "Purge build artifacts" && \
     apt-get purge -y --auto-remove $build_deps && \
     apt-get clean && \
