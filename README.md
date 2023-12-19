@@ -18,10 +18,10 @@ _NOTE: Only one process can connect to the metastore at a time because embedded 
 
 ## Usage
 
-The package is published to the [Github Container Registry](https://github.com/criccomini/hive-metastore-standalone/pkgs/container/hive-metastore-standalone).
+The package is published to the [Github Container Registry](https://github.com/recap-build/hive-metastore-standalone/pkgs/container/hive-metastore-standalone).
 
 ```
-docker pull ghcr.io/criccomini/hive-metastore-standalone:latest
+docker pull ghcr.io/recap-build/hive-metastore-standalone:latest
 ```
 
 ## Github Workflow
@@ -31,7 +31,7 @@ You can use the Hive Metastore for integration tests in your [Github Workflows](
 ```yaml
     services:
       hive-metastore:
-        image: ghcr.io/criccomini/hive-metastore-standalone:latest
+        image: ghcr.io/recap-build/hive-metastore-standalone:latest
         ports:
           - 9083:9083
 ```
