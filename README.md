@@ -36,6 +36,10 @@ You can use the Hive Metastore for integration tests in your [Github Workflows](
           - 9083:9083
 ```
 
+## Logging
+
+By default the Hive Metastore will log at INFO level. You can override this by setting the `HMS_LOGLEVEL` environment variable for the container.
+
 ## Acknowledgements
 
 This image is based on [@naushadh](https://github.com/naushadh)'s [hive-metastore](https://github.com/naushadh/hive-metastore) repo.
